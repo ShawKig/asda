@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class DATE{
+    private:
+    int ngay, thang ,nam;
+    public:
+    DATE(int ngay,int thang,int nam);
+    void nhap();
+    void in();
+    void normalize();
+    void daysln(int);
+    void advance(int nam, int thang, int ngay);
+    void songay();
+    void reset();
+}
+void nhap(int ngay, int thang ,int nam){
+    cout << "nhap ngay thang nam: ";
+    cin<< ngay << thang << nam ;
+}
